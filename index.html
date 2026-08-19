@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محفظة الأعمال | مطور ومصور</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <body>
+    <!-- الزر الجديد مع تعديلات بسيطة لضمان ظهوره -->
+    <button id="themeToggleBtn" class="dark-mode-btn">🌙</button>
+
+    <!-- باقي محتوى الموقع (الهيدر، النصوص، إلخ.) -->
+    <header>
+        <!-- ... محتوى الهيدر الحالي ... -->
+    </header>
+   
+
+    <!-- باقي محتوى موقعك هنا -->
+
+    <!-- شريط التنقل العلوي -->
+    <header>
+        <div class="logo">مرحباً بك</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">عني</a></li>
+                <li><a href="#skills">مهاراتي</a></li>
+                <li><a href="#projects">أعمالي</a></li>
+                <li><a href="#contact">تواصل معي</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- القسم الرئيسي الواجهة -->
+   <section class="hero">
+    <div class="hero-content">
+        <!-- إضافة الشعار -->
+        <img src="images/logo.png" alt="Belhadj Logo" style="width: 150px; border-radius: 50%; margin-bottom: 20px;">
+        <h1>أهلاً بك، أنا <span class="highlight">BELHADJ SAID</span></h1>
+        <p>Web Developer & Photographer</p>
+        <a href="#projects" class="btn">استعرض أعمالي</a>
+    </div>
+</section>
+
+    <!-- قسم من أنا -->
+    <section id="about" class="section">
+        <h2>من أنا</h2>
+        <p>شاب شغوف بالبرمجة وتطوير الويب، أمتلك خبرة في بناء واجهات المستخدم باستخدام أحدث التقنيات، بالإضافة إلى شغفي بالتصوير.</p>
+    </section>
+
+    <!-- قسم المهارات -->
+
+   
+   <section id="skills" class="skills-section">
+    <h2>مهاراتي وخبراتي</h2>
+    <p class="skills-subtitle">التقنيات والأدوات التي أستخدمها لإنشاء مشاريع مميزة</p>
+    
+    <div class="skills-container">
+        <!-- مهارات البرمجة -->
+        <div class="skill-card">
+            <div class="skill-icon">💻</div>
+            <h3>تطوير الويب</h3>
+            <p>بناء وتطوير واجهات المستخدم وتطبيقات الويب التفاعلية.</p>
+            <ul class="skill-list">
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>UI / UX Design</li>
+            </ul>
+        </div>
+
+        <!-- مهارات التصوير -->
+        <div class="skill-card">
+            <div class="skill-icon">📷</div>
+            <h3>التصوير الفوتوغرافي</h3>
+            <p>التقاط وتعديل الصور الاحترافية وإبراز التفاصيل الجمالية.</p>
+            <ul class="skill-list">
+                <li>تصوير البورتريه</li>
+                <li>معالجة الصور الرقمية</li>
+                <li>تنسيق الإضاءة</li>
+            </ul>
+        </div>
+
+        <!-- الأدوات والتقنيات -->
+        <div class="skill-card">
+            <div class="skill-icon">🛠️</div>
+            <h3>أدوات المطور</h3>
+            <p>الأدوات الأساسية التي تعزز إنتاجيتي في العمل اليومي.</p>
+            <ul class="skill-list">
+                <li>Git & GitHub</li>
+                <li>VS Code</li>
+                <li>Responsive Design</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+    <section id="skills" class="section">
+        <h2>المهارات التقنية</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML5</div>
+            <div class="skill-card">CSS3</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Git & GitHub</div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="projects" class="section">
+    <h2>معرض أعمالي</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>موقع شخصي (Portfolio)</h3>
+            <p>موقع تعريفي مصمم بـ HTML, CSS, JS.</p>
+        </div>
+        <div class="project-card">
+            <h3>قريباً...</h3>
+            <p>مشروع جديد تحت التطوير.</p>
+        </div>
+    </div>
+</section>
+    <!-- التذييل -->
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026</p>
+    </footer>
+
+    
+
+
+
+    <!-- قسم التواصل -->
+<section id="contact" style="padding: 40px 20px; text-align: center;">
+    <h2>تواصل معي</h2>
+    <p>لديه مشروع أو استفسار؟ تواصل معي عبر النموذج أدناه:</p>
+    
+    <form action="https://formspree.io/f/xppaoyyq" method="POST" id="contactForm" style="max-width: 500px; margin: 20px auto; display: flex; flex-direction: column; gap: 15px;">
+        <input type="text" name="name" placeholder="اسمك" required style="padding: 12px; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #fff;">
+        <input type="email" name="email" placeholder="بريدك الإلكتروني" required style="padding: 12px; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #fff;">
+        <textarea name="message" placeholder="رسالتك..." rows="5" required style="padding: 12px; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #fff;"></textarea>
+        <button type="submit" class="btn" style="padding: 12px; border-radius: 8px; background: #38bdf8; color: #0f172a; font-weight: bold; cursor: pointer;">إرسال الرسالة</button>
+    </form>
+</section>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    line-height: 1.6;
+}
+
+/* شريط التنقل */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #1e293b;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #f8fafc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #38bdf8;
+}
+
+/* الواجهة الرئيسية */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('images/hero-bg.jpg') no-repeat center center/cover;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #38bdf8;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+/* الأزرار العامة */
+.btn {
+    display: inline-block;
+    background-color: #38bdf8;
+    color: #0f172a;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #0ea5e9;
+}
+
+/* الأقسام */
+.section {
+    padding: 80px 8% 40px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #38bdf8;
+}
+
+/* شبكة المهارات */
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background-color: #1e293b;
+    padding: 20px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 1px solid #334155;
+}
+
+/* نموذج التواصل */
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact input, #contact textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #334155;
+    background-color: #1e293b;
+    color: #f8fafc;
+    outline: none;
+}
+
+#contact input:focus, #contact textarea:focus {
+    border-color: #38bdf8;
+}
+
+/* التذييل */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e293b;
+    color: #94a3b8;
+    margin-top: 40px;
+}
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #38bdf8;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* الألوان الافتراضية (الوضع المظلم) */
+:root {
+    --bg-color: #0f172a;
+    --text-color: #ffffff;
+    --card-bg: #1e293b;
+    --border-color: #334155;
+}
+/* --- تنسيق الزر الأساسي (لتحديد مكانه) --- */
+#themeToggleBtn {
+    position: fixed;    /* تثبيت الزر على الشاشة */
+    top: 20px;          /* يبعد عن الأعلى 20 بكسل */
+    left: 20px;         /* يبعد عن اليسار 20 بكسل */
+    z-index: 99999;     /* لضمان ظهوره فوق أي عنصر آخر */
+    padding: 12px 18px; /* حجم الزر */
+    border-radius: 50%; /* شكل دائري */
+    border: none;       /* إزالة الحدود */
+    cursor: pointer;    /* شكل مؤشر الفأرة */
+    font-size: 1.4rem;  /* حجم الأيقونة */
+    transition: background-color 0.3s, transform 0.2s; /* تأثيرات حركية */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* ظل خفيف */
+}
+
+/* تأثير عند تمرير الفأرة */
+#themeToggleBtn:hover {
+    transform: scale(1.1); /* يكبر قليلاً عند التحويم */
+}
+
+/* --- ألوان الوضع المظلم (الافتراضي في تصميمك) --- */
+/* لقد قمت بتعديل لون الزر ليكون فاتحاً ليتناسب مع الخلفية الداكنة */
+body {
+    background-color: #030712; /* لون الخلفية الداكنة الأصلية */
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#themeToggleBtn {
+    background-color: #38bdf8; /* لون الزر (أزرق سماوي) */
+    color: #030712; /* لون الأيقونة (داكن) */
+}
+
+/* --- ألوان الوضع الفاتح (Light Mode) --- */
+/* عند تفعيل هذا الكود، ستتغير ألوان الصفحة بأكملها */
+body.light-mode {
+    background-color: #f0f9ff; /* خلفية فاتحة */
+    color: #030712;
+}
+
+body.light-mode #themeToggleBtn {
+    background-color: #030712; /* لون الزر في الوضع الفاتح (داكن) */
+    color: #38bdf8; /* لون الأيقونة (سماوي) */
+}
+
+
+
+
+/* عندما يتم تفعيل الوضع الفاتح، اجعل الخلفيات الرئيسية والفرعية فاتحة والنصوص داكنة */
+body.light-mode,
+body.light-mode section,
+body.light-mode div,
+body.light-mode header {
+    background-color: #f8fafc !important;
+    color: #0f172a !important;
+}
+
+/* ضمان أن جميع النصوص والعناوين تصبح واضحة وداكنة في الوضع الفاتح */
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode p,
+body.light-mode span,
+body.light-mode a {
+    color: #0f172a !important;
+}
+
+
+/* إزالة أي خلفية داكنة معزولة وجعلها تتطابق مع الوضع الفاتح بالكامل */
+body.light-mode #hero,
+body.light-mode .hero,
+body.light-mode section,
+body.light-mode div,
+body.light-mode main {
+    background-color: #f8fafc !important;
+    background: #f8fafc !important;
+    box-shadow: none !important;
+}
+
+
+
+
+/* تنسيق عام لقسم المهارات */
+.skills-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+.skills-subtitle {
+    color: #94a3b8;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/* حاوية البطاقات بنظام شبكي مرن */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* تصميم البطاقة الواحدة */
+.skill-card {
+    background-color: #0f172a; /* لون خلفية البطاقة في الوضع الداكن */
+    border: 1px solid #1e293b;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: right;
+    direction: rtl;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* تأثير حركي عند تمرير الفأرة على البطاقة */
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.15);
+    border-color: #38bdf8;
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.skill-card p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* قائمة المهارات الفرعية داخل البطاقة */
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #1e293b;
+    padding-top: 15px;
+}
+
+.skill-list li {
+    color: #e2e8f0;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    position: relative;
+    padding-right: 15px;
+}
+
+/* إضافة نقطة صغيرة أمام كل مهارة */
+.skill-list li::before {
+    content: "•";
+    color: #38bdf8;
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+}
+
+/* --- توافق قسم المهارات مع الوضع الفاتح (Light Mode) --- */
+body.light-mode .skill-card {
+    background-color: #ffffff !important;
+    border-color: #e2e8f0 !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05) !important;
+}
+
+body.light-mode .skill-card h3 {
+    color: #0f172a !important;
+}
+
+body.light-mode .skill-card p,
+body.light-mode .skills-subtitle {
+    color: #475569 !important;
+}
+
+body.light-mode .skill-list {
+    border-top-color: #e2e8f0 !important;
+}
+
+body.light-mode .skill-list li {
+    color: #1e293b !important;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    direction: rtl; /* لضمان أن يبدأ اليمين من اليمين صحيحاً */
+    padding: 15px 30px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
