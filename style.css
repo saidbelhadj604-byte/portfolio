@@ -244,8 +244,8 @@ body.light-mode,
 body.light-mode section,
 body.light-mode div,
 body.light-mode header {
-    background-color: #f8fafc !important;
-    color: #0f172a !important;
+    background-color: #f8fafc;
+    color: #0f172a;
 }
 
 /* ضمان أن جميع النصوص والعناوين تصبح واضحة وداكنة في الوضع الفاتح */
@@ -255,7 +255,7 @@ body.light-mode h3,
 body.light-mode p,
 body.light-mode span,
 body.light-mode a {
-    color: #0f172a !important;
+    color: #0f172a;
 }
 
 
@@ -265,9 +265,9 @@ body.light-mode .hero,
 body.light-mode section,
 body.light-mode div,
 body.light-mode main {
-    background-color: #f8fafc !important;
-    background: #f8fafc !important;
-    box-shadow: none !important;
+    background-color: #f8fafc;
+    background: #f8fafc;
+    box-shadow: none;
 }
 
 
@@ -365,26 +365,26 @@ body.light-mode main {
 
 /* --- توافق قسم المهارات مع الوضع الفاتح (Light Mode) --- */
 body.light-mode .skill-card {
-    background-color: #ffffff !important;
-    border-color: #e2e8f0 !important;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05) !important;
+    background-color: #ffffff;
+    border-color: #e2e8f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 body.light-mode .skill-card h3 {
-    color: #0f172a !important;
+    color: #0f172a;
 }
 
 body.light-mode .skill-card p,
 body.light-mode .skills-subtitle {
-    color: #475569 !important;
+    color: #475569;
 }
 
 body.light-mode .skill-list {
-    border-top-color: #e2e8f0 !important;
+    border-top-color: #e2e8f0;
 }
 
 body.light-mode .skill-list li {
-    color: #1e293b !important;
+    color: #1e293b;
 }
 
 
